@@ -1,7 +1,7 @@
 import streamlit as st
 import electric_car as ec
 import pybasic as pb
-
+import travelspot as ts
 
 # 로그인 화면
 st.sidebar.title('로그인')
@@ -12,7 +12,7 @@ if user_id=='abc' and user_pw == '1234':
     st.sidebar.title(' sook 포트폴리오')
     #st.image('A01AL00804bom_VlXZ2FR.jpeg')
 
-    menu = st.sidebar.radio('메뉴선택',['파이썬 기초','탐색적 분석 : 전기자동차','머신러닝'],index=None)
+    menu = st.sidebar.radio('메뉴선택',['파이썬 기초','탐색적 분석 : 전기자동차','머신러닝','파이썬기초 미니프로젝트'],index=None)
     st.sidebar.write(menu)
     
     if menu == '탐색적 분석 : 전기자동차':
@@ -22,6 +22,8 @@ if user_id=='abc' and user_pw == '1234':
 
     elif menu == '파이썬 기초':
         pb.basic()
+    elif menu == '파이썬기초 미니프로젝트':
+        ts.travle_main()
 
 
 
