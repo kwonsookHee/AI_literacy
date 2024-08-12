@@ -27,7 +27,7 @@ def history(): # 역사 탐방 함수 정의
     if menu2=='궁궐':
         st.write(f'추천하는 궁궐은 {random.choice(pal)}입니다')
     elif menu2=='박물관':
-        st.writet(f'추천하는 박물관은 {random.choice(musium)}입니다')
+        st.write(f'추천하는 박물관은 {random.choice(musium)}입니다')
     elif menu2=='전통문화 체험':
         st.write(f'추천하는 전통 체험은 {random.choice(hand)}입니다')
     else:
