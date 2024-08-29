@@ -2,6 +2,7 @@ import streamlit as st
 import electric_car as ec
 import pybasic as pb
 import travelspot as ts
+import car_predict as cp
 
 # 로그인 화면
 st.sidebar.title('로그인')
@@ -18,7 +19,7 @@ if user_id=='abc' and user_pw == '1234':
     if menu == '탐색적 분석 : 전기자동차':
         ec.elec_exe()
     elif menu == '머신러닝':
-        st.header('공사중')
+        cp.Aiml_main()
 
     elif menu == '파이썬 기초':
         pb.basic()
